@@ -31,6 +31,6 @@ def addStudent():
     if you want to deserialize complete object you must write jsonObject in paremeter
     '''
     acc =Account(jsonObject =request.json)
-    return jsonify({"isSuccess":"true"})
+    return jsonify({"isSuccess":"true"}),201
 if __name__ == '__main__':
     app.run(debug=True)
